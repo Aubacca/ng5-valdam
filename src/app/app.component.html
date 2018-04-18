@@ -1,0 +1,34 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<mat-toolbar color="primary">  
+  <mat-toolbar-row>
+    <span>Public Reports</span>
+    <span class="example-spacer"></span>
+    <button mat-button>API Report</button>
+    <button mat-button>Transport Report</button>
+    <!-- This fills the remaining space of the current row -->
+    <span class="example-spacer"></span>
+    <button mat-button>About</button>
+
+    <span>Help</span>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row>
+    <span>Maintenance Reports</span>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+
+<mat-card>
+  <mat-form-field>
+    <input matInput [(ngModel)]="userName" placeholder="Enter your comment here">
+  </mat-form-field>
+
+  <button mat-raised-button (click)="showUser()">Show User</button>
+
+  <mat-spinner [style.display]="showSpinner ? 'block': 'none'"></mat-spinner>
+</mat-card>
+
+<mat-card *ngIf="answerDisplayed">
+  <h1>{{answerDisplayed}} was here!</h1>
+</mat-card>
