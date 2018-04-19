@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatButtonModule, 
+  MatGridListModule,
   MatToolbarModule,
   MatInputModule,
   MatProgressSpinnerModule,
@@ -8,11 +9,13 @@ import { MatButtonModule,
 
 @NgModule({
   imports: [MatButtonModule,
+    MatGridListModule,
     MatToolbarModule,
     MatInputModule,
     MatProgressSpinnerModule,
     MatCardModule],
   exports: [MatButtonModule,
+    MatGridListModule,
     MatToolbarModule,
     MatInputModule,
     MatProgressSpinnerModule,

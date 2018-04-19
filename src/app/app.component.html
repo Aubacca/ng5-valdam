@@ -18,6 +18,84 @@
 </mat-toolbar>
 
 
+<mat-grid-list cols="3" class="dashboard-top">
+  <mat-grid-tile>
+    <mat-card>
+      <mat-card-title>API Transport Conditions</mat-card-title>
+      <mat-card-content>
+        <img src="../assets/img/u2935.png" alt="API Transport Conditions" class="dashboard-img-top">
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card>
+      <mat-card-title>API Retest Period</mat-card-title>
+      <mat-card-content>
+        <img src="../assets/img/u2937.png" alt="API Retest Period" class="dashboard-img-top">
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card>
+      <mat-card-title>Overall Stability Budget</mat-card-title>
+      <mat-card-content>
+        <img src="../assets/img/u2940.jpg" alt="Overall Stability Budget" class="dashboard-img-top">
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list cols="4" class="dashboard-bottom">
+  <mat-grid-tile>
+    <mat-card>
+      <mat-card-title>DP Shelf Life & Storage</mat-card-title>
+      <mat-card-content>
+        <img src="../assets/img/u2943.png" alt="DP Shelf Life & Storage" class="dashboard-img-bottom">
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card>
+      <mat-card-title>In Use Conditions</mat-card-title>
+      <mat-card-content>
+        <img src="../assets/img/u2943.png" alt="In Use Conditions" class="dashboard-img-bottom">
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card>
+      <mat-card-title>Transport Conditions</mat-card-title>
+      <mat-card-content>
+        <img src="../assets/img/u2943.png" alt="Transport Conditions" class="dashboard-img-bottom">
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card>
+      <mat-card-title>Product Summary</mat-card-title>
+      <mat-card-content>
+        <img src="../assets/img/u2943.png" alt="Product Summary" class="dashboard-img-bottom">
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card>
+      <mat-card-title>Climatic Zones</mat-card-title>
+      <mat-card-content>
+        <img src="../assets/img/u2943.png" alt="Climatic Zones" class="dashboard-img-bottom">
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card>
+      <mat-card-title>Disclaimer</mat-card-title>
+      <mat-card-content>
+        <img src="../assets/img/u2943.png" alt="Disclaimer" class="dashboard-img-bottom">
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
+
 
 <mat-card>
   <mat-form-field>
@@ -32,3 +110,15 @@
 <mat-card *ngIf="answerDisplayed">
   <h1>{{answerDisplayed}} was here!</h1>
 </mat-card>
+
+<!--
+<mat-grid-list cols="4" rowHeight="100px">
+    <mat-grid-tile
+        *ngFor="let tile of tiles"
+        [colspan]="tile.cols"
+        [rowspan]="tile.rows"
+        [style.background]="tile.color">
+      {{tile.text}}
+    </mat-grid-tile>
+  </mat-grid-list>
+-->
